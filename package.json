@@ -7,6 +7,7 @@
   },
   "packageManager": "npm@10.8.2",
   "scripts": {
+    "prebuild": "node -e \"console.log('Node',process.version);\" && npm -v && npm ls oxc-parser || true",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
